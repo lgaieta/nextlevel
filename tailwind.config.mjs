@@ -1,8 +1,13 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+            },
             colors: {
                 accent: {
                     50: '#f4f2ff',
@@ -30,8 +35,8 @@ export default {
                     700: '#4f4f4f',
                     800: '#454545',
                     900: '#3d3d3d',
-                    950: '#212121',
-                    DEFAULT: '#212121',
+                    950: '#0d0d0d',
+                    DEFAULT: '#0d0d0d',
                     foreground: '#FFFFFF',
                 },
                 background: {
