@@ -11,7 +11,7 @@ const { clientName, clientInfo } = Astro.props
     class='flex max-w-md flex-col overflow-hidden rounded-2xl border border-foreground-200 shadow-2xl lg:rounded-[24px] lg:border-foreground-100'
 >
     <div
-        class='flex flex-1 flex-col justify-between bg-white p-6 lg:px-7 lg:py-8'
+        class='flex flex-1 flex-col justify-between bg-background p-6 lg:px-7 lg:py-8'
     >
         <div class='flex-1'>
             <div class='flex items-center'>
@@ -68,7 +68,7 @@ const { clientName, clientInfo } = Astro.props
             </div>
 
             <blockquote class='mt-8 flex-1'>
-                <p class='text-lg leading-relaxed text-gray-900'>
+                <p class='text-lg leading-relaxed text-foreground'>
                     <slot />
                 </p>
             </blockquote>
@@ -81,10 +81,10 @@ const { clientName, clientInfo } = Astro.props
                 alt=''
             />
             <div class='ml-4'>
-                <p class='text-base font-bold text-gray-900'>
+                <p class='text-base font-bold text-foreground'>
                     {clientName}
                 </p>
-                <p class='mt-0.5 text-sm text-gray-600'>
+                <p class='mt-0.5 text-sm text-foreground-600'>
                     {clientInfo}
                 </p>
             </div>
