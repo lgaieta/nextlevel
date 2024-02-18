@@ -1,0 +1,44 @@
+---
+import WhatsAppIcon from './WhatsAppIcon.astro'
+---
+
+<section
+    class='flex justify-center bg-background px-6 py-12 sm:py-16 lg:px-8 lg:py-20'
+>
+    <div
+        class='relative flex w-full max-w-[calc(1152px-64px)] justify-center rounded-[32px] bg-foreground-50'
+    >
+        <img
+            alt=''
+            class='absolute top-0 size-full max-w-[calc(1152px-64px)] rounded-[32px] object-cover'
+            src='/cta-bg.svg'
+        />
+        <div
+            class='z-10 flex flex-col items-center gap-10 px-6 py-16 lg:px-8 lg:py-20'
+        >
+            <h2
+                class='mt-4 max-w-[500px] text-balance text-center text-3xl font-bold text-foreground sm:text-4xl'
+            >
+                Comenzá a crecer tus redes sociales
+                <em class='italic'>sin límites</em>
+            </h2>
+            <div
+                class='flex flex-col items-center justify-center gap-4 sm:flex-row'
+            >
+                <a
+                    title='Envianos un mensaje por WhatsApp'
+                    href='https://wa.me/5491151475056'
+                    class='flex h-14 w-fit items-center justify-center gap-3 rounded-xl bg-accent-600 px-6 py-4 text-base font-bold !leading-none text-accent-foreground transition-all duration-200 hover:bg-accent-700 focus:bg-accent-700 focus:outline-none'
+                >
+                    <span class='size-6'> <WhatsAppIcon /></span>
+                    Envianos un mensaje
+                </a>
+                <button
+                    class='flex h-14 w-fit items-center justify-center gap-3 rounded-xl border border-foreground-600 bg-foreground-50 px-6 py-4 text-base font-medium !leading-none text-foreground transition-all duration-200 hover:bg-background focus:bg-background focus:outline-none'
+                >
+                    Dejanos tu email
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
