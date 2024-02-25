@@ -1,0 +1,40 @@
+---
+import CustomerIcon from '../icons/CustomerIcon.astro'
+import ChartIcon from '../icons/ChartIcon.astro'
+import HandMoneyIcon from '../icons/HandMoneyIcon.astro'
+---
+
+<section
+    class='flex flex-col items-center justify-center bg-foreground-50 text-foreground'
+>
+    <ul
+        class='mx-auto grid w-full max-w-6xl grid-cols-1 items-center justify-items-center gap-x-12 gap-y-20 px-4 py-36 sm:grid-cols-2 sm:items-start sm:px-6 lg:grid-cols-3 lg:px-8'
+    >
+        <li class='flex max-w-xs flex-col items-center gap-3 text-center'>
+            <CustomerIcon />
+            <p class='text-balance pt-2 text-lg font-bold'>Más clientes</p>
+            <p class='text-balance'>
+                Tu negocio será visto por las personas que realmente importan,
+                llegarás directamente a aquellos que necesitan lo que ofrecés.
+            </p>
+        </li>
+        <li class='flex max-w-xs flex-col items-center gap-3 text-center'>
+            <ChartIcon />
+            <p class='text-balance pt-2 text-lg font-bold'>Mejora continua</p>
+            <p class='text-balance'>
+                Analizamos los resultados de las campañas y tomamos decisiones
+                basadas en esos análisis para mejorar constantemente.
+            </p>
+        </li>
+        <li
+            class='col-auto flex max-w-xs flex-col items-center gap-3 text-center sm:col-span-2 lg:col-auto'
+        >
+            <HandMoneyIcon />
+            <p class='text-balance text-lg font-bold'>Inversión eficiente</p>
+            <p class='text-balance'>
+                Nuestro enfoque optimizado garantiza que tu presupuesto se
+                aprovechará de la forma más rentable posible.
+            </p>
+        </li>
+    </ul>
+</section>
