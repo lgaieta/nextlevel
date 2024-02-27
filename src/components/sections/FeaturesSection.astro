@@ -1,0 +1,64 @@
+---
+import FacebookPost from '../FacebookPost.astro'
+import PageExample from '../PageExample.astro'
+---
+
+<section class='bg-background py-12 text-foreground sm:py-16 lg:py-24'>
+    <div
+        class='mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 lg:px-8'
+    >
+        <h2 class='mt-4 text-center text-3xl font-bold sm:text-4xl'>
+            ¿Cómo te vamos a ayudar?
+        </h2>
+        <p
+            class='max-w-2xl text-balance text-center text-lg text-foreground-700'
+        >
+            Tenemos dos servicios principales para aumentar el flujo de
+            visualizaciones en lo que vos elijas.
+        </p>
+        <article
+            class='grid grid-cols-1 items-center justify-items-center gap-12 py-12 sm:py-16 md:grid-cols-2'
+        >
+            <div>
+                <header class='mb-4'>
+                    <h3 class='text-2xl font-bold sm:text-3xl'>
+                        Asesoría de Facebook Ads
+                    </h3>
+                </header>
+                <p class='text-pretty leading-relaxed'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis animi, aspernatur ex reiciendis assumenda ducimus
+                    quia illum non velit repudiandae distinctio voluptas
+                    pariatur praesentium, officiis at incidunt quis libero!
+                    Atque. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                </p>
+            </div>
+            <div class='rounded-2xl border border-foreground-50 shadow-lg'>
+                <FacebookPost />
+            </div>
+        </article>
+        <article
+            class='grid grid-cols-1 items-center justify-items-center gap-12 py-8 sm:py-16 md:grid-cols-2'
+        >
+            <div class='row-start-2 rounded-lg shadow-lg sm:row-start-1'>
+                <PageExample />
+            </div>
+            <div>
+                <header class='mb-4'>
+                    <h3 class='text-2xl font-bold sm:text-3xl'>
+                        Diseño de Página Web
+                    </h3>
+                </header>
+                <p class='text-pretty leading-relaxed'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis animi, aspernatur ex reiciendis assumenda ducimus
+                    quia illum non velit repudiandae distinctio voluptas
+                    pariatur praesentium, officiis at incidunt quis libero!
+                    Atque. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
