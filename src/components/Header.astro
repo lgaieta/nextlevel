@@ -10,12 +10,32 @@
             </div>
 
             <a
-                href='/'
+                id='HeaderCTA'
+                title='Envianos un mensaje por WhatsApp'
+                href='https://wa.me/5491151475056'
                 title='Comenzar la asesoría'
-                class='ml-10 hidden items-center justify-center rounded-lg border border-transparent bg-transparent px-4 py-2 text-base font-semibold text-accent-700 transition-all duration-200 hover:bg-accent-100 focus:bg-accent-200 sm:inline-flex'
+                class='ml-10 hidden items-center justify-center rounded-lg border border-transparent bg-accent-600 px-4 py-2 text-base font-semibold text-accent-foreground transition-all duration-200 hover:bg-accent-500 focus:bg-accent-700 sm:inline-flex'
             >
-                Quiero que me contacten
+                Empezar ahora
             </a>
         </nav>
     </div>
 </header>
+
+<style>
+    #HeaderCTA {
+        animation: show-button ease both 1ms;
+        animation-timeline: scroll(root block);
+        animation-range: 500px 600px;
+    }
+
+    @keyframes show-button {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
